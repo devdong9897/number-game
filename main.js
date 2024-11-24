@@ -11,8 +11,10 @@ let computer = 0;
 let playButton = document.getElementById("play-button");
 let userInput = document.getElementById("userInput");
 let resultArea = document.getElementById("result-area");
+let resetButton = document.getElementById("reset-button");
 
 playButton.addEventListener("click", play);
+resetButton.addEventListener("click", reset);
 
 function random() {
   computer = Math.floor(Math.random() * 100) + 1;
@@ -40,6 +42,18 @@ function play() {
     resultArea.appendChild(imgElement);
     resultArea.textContent = "맞췄습니다!!!";
   }
+}
+
+function reset() {
+  userInput.value = "";
+
+  let imgElement = document.createElement("img");
+  imgElement.src = "images/basics.gif";
+
+  resultArea.innerHTML = "";
+  resultArea.appendChild(imgElement);
+
+  random();
 }
 
 random();

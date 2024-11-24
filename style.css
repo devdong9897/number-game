@@ -17,6 +17,13 @@ body {
 
 .container h1 {
   color: blue;
+  font-size: 3rem;
+  font-family: "East Sea Dokdo", sans-serif;
+}
+
+.container h2 {
+  font-family: "East Sea Dokdo", sans-serif;
+  font-size: 2rem;
 }
 
 .container input {
@@ -33,4 +40,15 @@ body {
   background-color: yellowgreen;
   border-radius: 30px;
   color: white;
+  cursor: pointer;
+}
+
+.container #reset-button {
+  width: 50px;
+  height: 45px;
+  border: none;
+  background-color: blueviolet;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
 }
