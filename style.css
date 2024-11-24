@@ -1,0 +1,36 @@
+body {
+  height: 100vh;
+  background-image: url("./images/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  text-align: center;
+  border: 5px solid white;
+  border-radius: 5px;
+  width: 500px;
+  height: 700px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.container h1 {
+  color: blue;
+}
+
+.container input {
+  width: 300px;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+}
+
+.container #play-button {
+  width: 100px;
+  height: 45px;
+  border: none;
+  background-color: yellowgreen;
+  border-radius: 30px;
+  color: white;
+}
